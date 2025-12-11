@@ -150,7 +150,6 @@ public class DBManager {
             try {
                 psAltaActor = c.prepareStatement(QUERYS.INSERT_ACTOR);
                 //psAltaActor = c.prepareStatement(QUERYS.INSERT_ACTOR(actor));
-                psAltaActor = c.prepareStatement(actor.INSERT());
                 // actor_id, first_name, last_name
                 if(actor.getId() == null)
                     psAltaActor.setNull(1, java.sql.Types.INTEGER);

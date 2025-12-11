@@ -1,8 +1,5 @@
 package es.ciudadescolar.SQL;
 
-import es.ciudadescolar.sakila.Actor;
-import es.ciudadescolar.sakila.Pelicula;
-
 public class QUERYS {
     // Selects
     // _______________________________________________________________________________________________
@@ -14,23 +11,4 @@ public class QUERYS {
     public static final String INSERT_FILM_ACTOR = "INSERT INTO film_actor(actor_id, film_id, last_update) VALUES(?, ?, ?)";
     // Deletes
     // _______________________________________________________________________________________________
-
-    public static String INSERT_ACTOR(Actor a) {
-        String salida = "";
-
-        String INSERT = "INSERT INTO actor(";
-        String VALUES = ") VALUES(";
-        if (a.getId() != null) {
-            INSERT += "film_id, ";
-            VALUES += a.getId() + ", ";
-        }
-        INSERT += "first_name, last_name";
-        VALUES += a.getFirst_name() + ", " + a.getLast_name() + ")";
-        salida = INSERT + VALUES;
-        return salida;
-    }
-
-    public static String INSERT_FILM(Pelicula p){
-        return "";
-    }
 }
