@@ -1,0 +1,34 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "23.21.117.135",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "MaquinaAWS_User",
+            "database": "sakila",
+            "username": "alumno",
+            "password": "dam1"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "23.21.117.135",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "MaquinaAWS_Admin",
+            "database": "sakila",
+            "username": "root",
+            "password": "root2526"
+        }
+    ]
+}
